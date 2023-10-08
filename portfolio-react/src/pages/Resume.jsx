@@ -1,7 +1,38 @@
+import html2canvas from "html2canvas";
+import jsPDF from "jspdf";
+import { useRef } from "react";
+import { saveAs } from "file-saver"
+
 export default function Resume() {
+    const pdfResume = useRef();
+    const downloadPDF = () => {
+        const input = pdfResume.current;
+        html2canvas(input).then((canvas) => {
+            const imgData = canvas.toDataURL("image/png");
+            console.log(imgData);
+            const pdf = new jsPDF("p", "pt", "letter", true);
+            const pdfWidth = pdf.internal.pageSize.getWidth();
+            const pdfHeight = pdf.internal.pageSize.getHeight();
+            const imgWidth = canvas.width;
+            const imgHeight = canvas.height;
+            const ratio = Math.min(pdfWidth / imgWidth, pdfHeight / imgHeight);
+            const imgX = (pdfWidth - imgWidth * ratio) / 2;
+            const imgY = 30;
+            pdf.addImage(imgData, "PNG", imgX, imgY, imgWidth * ratio, imgHeight * ratio);
+            pdf.save("Resume.pdf");
+        });
+    };
+    
     return (
-        <div className="container-sm">
-            <section>
+       <>
+           <div>
+              <button className="btn btn-outline-success btn-sm my-4 p-2" onClick={downloadPDF}>Download PDF
+                </button>
+            </div>
+    
+        <div className="container-sm" id="content" ref={pdfResume}>
+            <h2 className="mt-3 mb-5">Aaron Garcia</h2>
+         <section >
             <h3 className="summary">Summary</h3>
             <p>
                 Highly motivated professional with a strong work ethic,
@@ -13,7 +44,6 @@ export default function Resume() {
             <section>
             <h3 className="skills">Skills</h3>
             <ul className="list-group list-group-horizontal-md">
-                <li className="list-group-item">PPE Use</li>
                 <li className="list-group-item">Organizational Skills</li>
                 <li className="list-group-item">Problem Resolution</li>
                 <li className="list-group-item">Good Work Ethic</li>
@@ -103,10 +133,11 @@ export default function Resume() {
             <section>
                 <p>
                     [Additional Info]
-                Currently pursuing a Full-Stack Developer certification, embracing new challenges
-                beyond my comfort zone.
+                Currently pursuing a Full-Stack Developer certification.
                 </p>
             </section>
-        </div>
-    )
+        </div> 
+        </>
+   )     
+    
 }

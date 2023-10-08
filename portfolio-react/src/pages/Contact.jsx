@@ -8,6 +8,7 @@ export default function Contact() {
         sendCopy: true,
 
     });
+     
 
     const handleInput = (e) => {
         const { name, value } = e.target;
@@ -15,11 +16,13 @@ export default function Contact() {
             ...formData,
             [name]: value,
         });
+
+        
     };
 
     const handleSubmit = async (e) => {
         e.preventDefault();
-    
+       
 
     try {
         const response = await fetch('', {
@@ -39,22 +42,22 @@ export default function Contact() {
     }
 }
     return (
-        <form>
+        <form className='needs-validation' noValidate>
        <h1>Contact Form</h1>
         <div className="form-outline mb-4">
-          <input type="text" id="name" className="form-control" name="name" value={formData.name} onChange={handleInput} />
+          <input type="text" id="name" className="form-control" name="name" value={formData.name} onChange={handleInput} required/>
           <label className="form-label" htmlFor="name">Name</label>
         </div>
       
         
         <div className="form-outline mb-4">
-          <input type="email" id="email" className="form-control" name="email" value={formData.email} onChange={handleInput}/>
+          <input type="email" id="email" className="form-control" name="email" value={formData.email} onChange={handleInput} required/>
           <label className="form-label" htmlFor="email">Email address</label>
         </div>
       
        
         <div className="form-outline mb-4">
-          <textarea className="form-control" id="message" rows="4" name="message" value={formData.message} onChange={handleInput}></textarea>
+          <textarea className="form-control" id="message" rows="4" name="message" value={formData.message} onChange={handleInput} required></textarea>
           <label className="form-label" htmlFor="message">Message</label>
         </div>
       
