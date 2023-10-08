@@ -1,5 +1,4 @@
-
-
+//creates Footer with links represented by icons to github page, linkedin and stackoverflow
 
 export default function Footer() {
     return (

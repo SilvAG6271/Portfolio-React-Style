@@ -6,7 +6,7 @@ import "./index.css";
 import "bootstrap-icons/font/bootstrap-icons.css";
 
 
-
+//routing of pages
 import App from "./App";
 import ErrorPage from "./pages/ErrorPage";
 import AboutMe from "./pages/AboutMe";

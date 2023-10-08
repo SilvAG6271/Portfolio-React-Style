@@ -5,6 +5,7 @@ import Footer from "./pages/Footer";
 // import viteLogo from '/vite.svg'
 // import './App.css'
 
+//basic structure for App, imports Nav and Footer so they render on all pages
 function App() {
   return (
     <>

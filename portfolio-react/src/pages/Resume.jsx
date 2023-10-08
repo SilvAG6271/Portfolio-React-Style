@@ -1,8 +1,11 @@
+//imports to help take the html page and dowmload it as a pdf file
+
 import html2canvas from "html2canvas";
 import jsPDF from "jspdf";
 import { useRef } from "react";
-import { saveAs } from "file-saver"
 
+//logic to create the ability for the user to download the page as a PDF using html2canvas and 
+//jsPDF
 export default function Resume() {
     const pdfResume = useRef();
     const downloadPDF = () => {
@@ -22,7 +25,7 @@ export default function Resume() {
             pdf.save("Resume.pdf");
         });
     };
-    
+    //renders the resume with added button to download a pdf version, used Bootstrap for design
     return (
        <>
            <div>

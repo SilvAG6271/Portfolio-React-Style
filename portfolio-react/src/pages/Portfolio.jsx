@@ -1,9 +1,12 @@
+//imported all the images from past projects
 import travelogue from './../../src/images/Travelogue2.png';
 import characterDnD from './../../src/images/DnD2.jpeg';
 import codingQuiz from './../../src/images/CodingQuiz.jpeg';
 import weatherApp from './../../src/images/Weather Dashboard.jpeg';
 import workScheduler from './../../src/images/planner.jpeg';
 import noteTaking from './../../src/images/noteTaker.png';
+
+//an array of objects that have properties related to my past projects
 export default function Portfolio() {
     const projects = [
        { 
@@ -56,7 +59,7 @@ export default function Portfolio() {
     },
 
     ]
-
+    //rendering the separate projects and their related info on a card (Bootstrap)
     return (
     <div>
         <h1>Projects</h1>

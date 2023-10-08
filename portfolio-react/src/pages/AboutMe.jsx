@@ -2,6 +2,7 @@
 import image from "../images/self.jpg"
 import "../App.css"
 
+//creates About Me Page using BootStrap
 export default function AboutMe() {
     return (
         
