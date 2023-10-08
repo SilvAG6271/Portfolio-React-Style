@@ -1,10 +1,10 @@
 //imported all the images from past projects
-import travelogue from './../../src/images/Travelogue2.png';
-import characterDnD from './../../src/images/DnD2.jpeg';
-import codingQuiz from './../../src/images/CodingQuiz.jpeg';
-import weatherApp from './../../src/images/Weather Dashboard.jpeg';
-import workScheduler from './../../src/images/planner.jpeg';
-import noteTaking from './../../src/images/noteTaker.png';
+import travelogue from '../../media/Travelogue2.png';
+import characterDnD from '../../media/DnD2.jpeg';
+import codingQuiz from '../../media/CodingQuiz.jpeg';
+import weatherApp from '../../media/Weather Dashboard.jpeg';
+import workScheduler from '../../media/planner.jpeg';
+import noteTaking from '../../media/noteTaker.png';
 
 //an array of objects that have properties related to my past projects
 export default function Portfolio() {

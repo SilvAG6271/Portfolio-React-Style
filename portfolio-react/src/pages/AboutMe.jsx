@@ -1,5 +1,5 @@
 
-import image from "../images/self.jpg"
+import image from "../../media/self.jpg"
 import "../App.css"
 
 //creates About Me Page using BootStrap
