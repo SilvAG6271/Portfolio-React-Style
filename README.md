@@ -28,6 +28,7 @@ This webpage will allow prospective employers to view info about me, my projects
 
 
 
+
 ## Credits 
 *Logic for array in Project page was from user njthanhtrang (https://github.com/njthanhtrang)
 *Logic for downloading PDF is from Code Pro on youtube, channel is https://www.youtube.com/channel/UCNVKOc0Ya-MVHElzxT7htxw
