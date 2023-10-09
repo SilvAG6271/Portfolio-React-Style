@@ -21,9 +21,9 @@ None needed
   
 ## Usage 
 This webpage will allow prospective employers to view info about me, my projects and contact me if desired.
-![image of About Me page with picture of a hispanic man](portfolio-react/media/AboutMeReact.png)
-![image of various projects](portfolio-react/media/ProjectsReact.png)
-![](portfolio-react/media/ReactPortfolio.gif)
+![image of About Me page with picture of a hispanic man](media/AboutMeReact.png)
+![image of various projects](media/ProjectsReact.png)
+![](media/ReactPortfolio.gif)
 
 
 
