@@ -21,6 +21,7 @@ None needed
   
 ## Usage 
 This webpage will allow prospective employers to view info about me, my projects and contact me if desired.
+Find the portfolio here: (https://aarong-portfolio-6d0c31.netlify.app/)
 ![image of About Me page with picture of a hispanic man](media/AboutMeReact.png)
 ![image of various projects](media/ProjectsReact.png)
 ![](media/ReactPortfolio.gif)
