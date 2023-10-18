@@ -39,7 +39,7 @@ export default function AboutMe() {
                 Beyond the professional sphere, I find solace and inspiration in the simple joys of
                 life. Reading transports me to different worlds, while music and podcasts form the soundtrack of my daily musings.
                 My love for nature beckons me to explore scenic trails, and my passion for culinary 
-                advnetures has earned me the title of devoted foodie.
+                adventures has earned me the title of devoted foodie.
             </p>
           </section>
           <section className="passions text-center mt-4">
