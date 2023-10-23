@@ -118,9 +118,9 @@ export default function Resume() {
             <li>Skilled in cycle counting and discrepancy resolution.</li>
             <li>Vigilant in inspecting incoming materials for damage.</li>
             <li>Contributed to process improvements.</li>
-            <li>Maintained safe and oranized work areas.</li>
+            <li>Maintained safe and organized work areas.</li>
             <li>Collaborated seamlessly with production and transport teams.</li>
-            <li>CEfficient operation of heavy-load equipment.</li>
+            <li>Efficient operation of heavy-load equipment.</li>
             <li>Detail-oriented price tagging and packing.</li>
            </ul>
             </section>
@@ -136,7 +136,7 @@ export default function Resume() {
             <section>
                 <p>
                     [Additional Info]
-                Currently pursuing a Full-Stack Developer certification.
+                Have a Full-Stack Developer certification.
                 </p>
             </section>
         </div> 
